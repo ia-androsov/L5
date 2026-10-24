@@ -4,27 +4,30 @@
 
 This repository contains the Wolfram Mathematica notebooks and data files for the paper
 *Multiplicity of Limit Cycles Near Hyperbolic Polycycles of Codimension 5* (I. Androsov).
-The paper computes the resultant R4 of the system Q1,4 = ... = Q4,4 = 0;
-the polynomial L5 is expressed through R4 (Corollary of Theorem 6.1).
+The paper computes the resultant $\mathcal{R}_4$ of the system $Q_{1,4} = \dots = Q_{4,4} = 0$;
+the polynomial $\mathcal{L}_5$ is expressed through $\mathcal{R}_4$ (Corollary of Theorem 6.1).
 
 - **`Poisson_L5.nb`**  
-  Computation of R4 via the Poisson formula: the Gröbner basis of I4 (grevlex),
-  the 6×6 matrix of multiplication by q4,4 and its determinant, R2 and R3, and
-  R4 = det(m_q4,4) · R3^4. The result is written to `Res.wdx`.
-  The last section checks the formulas for R2 and R3, the factorization of R4,
-  the degrees and the irreducibility of the factor A (over Q and over the algebraic closure),
-  and the symmetries of R4 discussed in Section 7.
+  Computation of $\mathcal{R}_4$ via the Poisson formula: the Gröbner basis of $I_4$ (grevlex),
+  the $6 \times 6$ matrix of multiplication by $q_{4,4}$ and its determinant, $\mathcal{R}_2$ and $\mathcal{R}_3$, and
+
+  $$\mathcal{R}_4 = \det\left(m_{q_{4,4}}\right) \cdot \mathcal{R}_3^4.$$
+
+  The result is written to `Res.wdx`.
+  The last section checks the formulas for $\mathcal{R}_2$ and $\mathcal{R}_3$, the factorization of $\mathcal{R}_4$,
+  the degrees and the irreducibility of the factor $\mathfrak{A}$ (over $\mathbb{Q}$ and over the algebraic closure),
+  and the symmetries of $\mathcal{R}_4$ discussed in Section 7.
 
 - **`DiscrL5.nb`**  
-  The conjecture on the discriminant: z1, z2 are eliminated from Q1 = Q2 = Q3 = 0 (z4 = 1),
-  and A is shown to divide the discriminant of the eliminant with respect to z3.
+  The conjecture on the discriminant: $z_1, z_2$ are eliminated from $Q_{1,4} = Q_{2,4} = Q_{3,4} = 0$ ($z_4 = 1$),
+  and $\mathfrak{A}$ is shown to divide the discriminant of the eliminant with respect to $z_3$.
   Reads `Res.wdx`.
 
 - **`Res.wdx`**  
-  The polynomial R4 in Wolfram Data Exchange format.
+  The polynomial $\mathcal{R}_4$ in Wolfram Data Exchange format.
 
 - **`respdf.nb`**, **`respdf.pdf`**  
-  R4 written out in full.
+  $\mathcal{R}_4$ written out in full.
 
 Run `Poisson_L5.nb` first, then `DiscrL5.nb`. Both notebooks work in their own directory.
 With Mathematica 14.3 on a desktop computer, `Poisson_L5.nb` takes about 15 minutes
