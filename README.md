@@ -6,15 +6,15 @@ This repository contains the Wolfram Mathematica notebooks and data files for th
 *Multiplicity of Limit Cycles Near Hyperbolic Polycycles of Codimension 5* (I. Androsov).
 The paper computes the resultant $`\mathcal{R}_4`$ of the system $`Q_{1,4} = \dots = Q_{4,4} = 0`$;
 the polynomial $`\mathcal{L}_5`$ is expressed through $`\mathcal{R}_4`$ (Corollary of Theorem 6.1).
+By the Poisson formula,
+
+$$
+\mathcal{R}_4 = \det\left(m_{q_{4,4}}\right) \cdot \mathcal{R}_3^4.
+$$
 
 - **`Poisson_L5.nb`**  
   Computation of $`\mathcal{R}_4`$ via the Poisson formula: the Gröbner basis of $`I_4`$ (grevlex),
-  the $`6 \times 6`$ matrix of multiplication by $`q_{4,4}`$ and its determinant, $`\mathcal{R}_2`$ and $`\mathcal{R}_3`$, and
-
-  ```math
-  \mathcal{R}_4 = \det\left(m_{q_{4,4}}\right) \cdot \mathcal{R}_3^4.
-  ```
-
+  the $`6 \times 6`$ matrix of multiplication by $`q_{4,4}`$ and its determinant, $`\mathcal{R}_2`$ and $`\mathcal{R}_3`$.
   The result is written to `Res.wdx`.
   The last section checks the formulas for $`\mathcal{R}_2`$ and $`\mathcal{R}_3`$, the factorization of $`\mathcal{R}_4`$,
   the degrees and the irreducibility of the factor $`\mathfrak{A}`$ (over $`\mathbb{Q}`$ and over the algebraic closure),
